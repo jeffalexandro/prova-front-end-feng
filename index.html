@@ -7,6 +7,9 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<title>Teste Feng</title>
 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+	 crossorigin="anonymous">
+
 	<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
 	 integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
 	<!-- Your custom styles (optional) -->
@@ -21,27 +24,113 @@
 				<div class="card mb-3 p-md-4 card-body card-borded">
 					<h4 class="card-title-custom">Escolha o seu Plano</h4>
 					<!-- <p class="card-text">Some quick example text to build on the panel title and make up the bulk of the panel's content.</p> -->
-					<div class="row mb-5">
-						<div class="col-md-3">
+					<div class="row">
+						<div class="col-6 col-md-3 pt-4">
 							<!-- <label for="exampleFormControlSelect1">Example select</label> -->
 							<select class="form-control" id="exampleFormControlSelect1">
-								<option>1</option>
-								<option>2</option>
+								<option value="1">Nação Jr</option>
+								<option value="2">Tradição</option>
+								<option value="3">Raça</option>
+								<option value="4">+Raça</option>
+								<option value="5">Amor</option>
+								<option value="6">+Amor</option>
+								<option value="7">Paixão</option>
+								<option value="8">+Paixão</option>
 							</select>
 							<!-- <label for="exampleFormControlSelect2">Example multiple select</label> -->
 							<select class="form-control" id="exampleFormControlSelect2">
-								<option>1</option>
-								<option>2</option>
+								<option>Nenhum convidado</option>
+								<option>Convidados: 1</option>
+								<option>Convidados: 2</option>
+								<option>Convidados: 3</option>
 							</select>
 						</div>
-						<div class="col-md-9"></div>
-					</div>
-					<h5 class="card-title-custom">Principais benefícios:</h5>
-					<div class="row">
-						<div class="col-md-4">
+						<div class="col-6 col-md-9">
+							<div class="row">
+								<div class="col p-1">
+									<p class="img-title">Nação Jr</p>
+									<img src="http://via.placeholder.com/100X60" class="rounded mx-auto card-img" alt="...">
+									<p class="img-value">R$ 18,00</p>
+								</div>
+								<div class="col p-1 d-none d-md-block d-lg-block">
+									<p class="img-title">Tradição</p>
+									<img src="http://via.placeholder.com/100X60" class="rounded mx-auto card-img" alt="...">
+									<p class="img-value">R$ 29,90</p>
+								</div>
+								<div class="col p-1 d-none d-md-block d-lg-block">
+									<p class="img-title">Raça</p>
+									<img src="http://via.placeholder.com/100X60" class="rounded mx-auto card-img" alt="...">
+									<p class="img-value">R$ 39,90</p>
+								</div>
+								<div class="col p-1 d-none d-md-block d-lg-block">
+									<p class="img-title">+Raça</p>
+									<img src="http://via.placeholder.com/100X60" class="rounded mx-auto card-img" alt="...">
+									<p class="img-value">R$ 69,90</p>
+								</div>
+								<div class="col p-1 d-none d-md-block d-lg-block">
+									<p class="img-title">Amor</p>
+									<img src="http://via.placeholder.com/100X60" class="rounded mx-auto card-img" alt="...">
+									<p class="img-value">R$ 99,90</p>
+								</div>
+								<div class="col p-1 d-none d-md-block d-lg-block">
+									<p class="img-title">+Amor</p>
+									<img src="http://via.placeholder.com/100X60" class="rounded mx-auto card-img" alt="...">
+									<p class="img-value">R$ 129,90</p>
+								</div>
+								<div class="col p-1 d-none d-md-block d-lg-block">
+									<p class="img-title">Paixão</p>
+									<img src="http://via.placeholder.com/100X60" class="rounded mx-auto card-img" alt="...">
+									<p class="img-value">R$ 159,90</p>
+								</div>
+								<div class="col p-1 d-none d-md-block d-lg-block">
+									<p class="img-title">+Paixão</p>
+									<img src="http://via.placeholder.com/100X60" class="rounded mx-auto card-img" alt="...">
+									<p class="img-value">R$ 199,90</p>
+								</div>
+							</div>
 
+							<!-- <img src="http://via.placeholder.com/100X60" class="rounded mx-auto" alt="...">
+							<img src="http://via.placeholder.com/100X60" class="rounded mx-auto" alt="...">
+							<img src="http://via.placeholder.com/100X60" class="rounded mx-auto" alt="...">
+							<img src="http://via.placeholder.com/100X60" class="rounded mx-auto" alt="...">
+							<img src="http://via.placeholder.com/100X60" class="rounded mx-auto" alt="...">
+							<img src="http://via.placeholder.com/100X60" class="rounded mx-auto" alt="...">
+							<img src="http://via.placeholder.com/100X60" class="rounded mx-auto" alt="..."> -->
 						</div>
-						<div class="col-md-8"></div>
+					</div>
+					<h5 class="card-title-custom my-3">Principais benefícios:</h5>
+					<div class="row">
+						<div class="col-5">
+							<div class="row text-center my-3">
+								<div class="col">
+									<i class="far fa-star fa-4x font-red mb-3"></i>
+									<p class="card-text">Prioridade 1 na compra de ingressos;</p>
+								</div>
+								<div class="col">
+									<i class="far fa-credit-card fa-4x font-red mb-3"></i>
+									<p class="card-text">Possibilidade de comprar ingresso para até 3 convidados;</p>
+								</div>
+								<div class="col">
+									<i class="far fa-circle fa-4x font-red mb-3"></i>
+									<p class="card-text">Acumule pontos e troque por experiências</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-7">
+							<p class="card-text">
+								Cartão-ingresso personalizado, prioridade 1 na compra de ingressos, descontos em ingressos, compra online, com igresso carregado
+								no cartão-ingresso, até 3 convidados para compra de ingressos**, cartão com função débito pré-pago Visa*, acumule
+								pontos no programa de Fibelidade 3 vezes a sua mensalidade em pontos de adesão, experiências incríveis, desconto
+								em lojas oficiais, rede de desconto, desconto na mensalidade do Nação Jr para o seu filho.
+							</p>
+							<p class="card-text">
+								<small>* Opcional, sem taxa pela emissão do cartão</small>
+							</p>
+							<p class="card-text">
+								<small>** Opcional, A compra de ingressos para convidado possuem as mensamas vantagens do sócio-torcedor. Será acrescentado
+									o valor de R$30 à sua mensalidade por</small>
+							</p>
+						</div>
 					</div>
 					<!-- <div class="flex-row">
 						<a class="card-link">Card link</a>
