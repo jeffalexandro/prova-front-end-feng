@@ -142,10 +142,9 @@
 			</div>
 			<div class="col-md-4 col-sm-12">
 				<div class="card mb-4 p-4 card-body">
-					<h4 class="card-title-custom">Meus Dados
+					<h4 class="card-title-custom mb-4">Meus Dados
 						<span class="float-right">1</span>
 					</h4>
-					<!-- <h4 class="card-title-custom pull-right col">1</h4> -->
 					<div class="form-group ">
 						<label for="meus_dados_nome">Nome</label>
 						<input type="text" class="form-control" id="meus_dados_nome">
@@ -168,20 +167,56 @@
 							a identificação e validação de sua assinatura.
 						</small>
 					</p>
-					<div class="flex-row">
-						<!-- <a class="card-link">Card link</a> -->
-						<!-- <a class="card-link">Another link</a> -->
+					<div class="flex-row mt-2">
 						<button type="button" class="btn btn-outline-danger" style="font-size: 9px;">Cadastre aqui o seu endereço para receber o seu cartão ingresso</button>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-12">
 				<div class="card mb-3 card-body">
-					<h4 class="card-title-custom">Pagamento</h4>
-					<p class="card-text">Some quick example text to build on the panel title and make up the bulk of the panel's content.</p>
-					<div class="flex-row">
-						<a class="card-link">Card link</a>
-						<a class="card-link">Another link</a>
+					<h4 class="card-title-custom mb-4">Pagamento
+						<strong class="float-right">2</strong>
+					</h4>
+					<div class="form-group ">
+						<label for="pagamento_forma">Forma de pagamento</label>
+						<input type="text" class="form-control" id="pagamento_forma">
+					</div>
+					<div class="form-group">
+						<label for="pagamento_portador">Nome do protador (Impresso no cartão)</label>
+						<input type="text" class="form-control" id="pagamento_portador">
+					</div>
+					<div class="form-group">
+						<label for="pagamento_cpf">CPF</label>
+						<input type="text" class="form-control" id="pagamento_cpf">
+					</div>
+					<div class="form-row">
+						<div class="col-md-9 form-group">
+							<label for="pagamento_numero_cartao">Número Cartão</label>
+							<input type="text" class="form-control" id="pagamento_numero_cartao">
+						</div>
+						<div class="col-md-3">
+							<img src="assets/img/visa-logo-1.png" class="rounded mx-auto mt-4 card-img" alt="" />
+						</div>
+
+					</div>
+					<div class="form-row">
+						<div class="col-md-3 form-group">
+							<label for="pagamento_mes">Mês</label>
+							<input type="text" class="form-control" id="pagamento_mes">
+						</div>
+						<div class="col-md-3 form-group">
+							<label for="pagamento_ano">Ano</label>
+							<input type="text" class="form-control" id="pagamento_ano">
+						</div>
+						<div class="col-md-3 form-group">
+							<label for="pagamento_codigo">CVV</label>
+							<input type="text" class="form-control" id="pagamento_codigo">
+						</div>
+					</div>
+
+					<div class="flex-row mt-3">
+						<button type="button" class="btn btn-outline-danger" style="font-size: 11px;">Pagar com pntos Multiplus</button>
+						<button type="button" class="btn btn-outline-danger" style="font-size: 11px;">Pagar com cartão Peela</button>
 					</div>
 				</div>
 			</div>
