@@ -7,23 +7,51 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<title>Teste Feng</title>
 
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- Bootstrap core CSS -->
-	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
-	<!-- Material Design Bootstrap -->
-	<link href="assets/css/mdb.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+	 integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
 	<!-- Your custom styles (optional) -->
 	<link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
-	<div class="container-fluid" style="background-color:red">
-		<div class="row pt-3">
+	<div class="container-fluid p-2 p-md-4">
+		<div class="row">
 			<div class="col-12">
-				<div class="card mb-3 card-body">
-					<h4 class="card-title">Panel title</h4>
+				<div class="card mb-3 p-md-4 card-body card-borded">
+					<h4 class="card-title-custom">Escolha o seu Plano</h4>
+					<!-- <p class="card-text">Some quick example text to build on the panel title and make up the bulk of the panel's content.</p> -->
+					<div class="row mb-5">
+						<div class="col-md-3">
+							<!-- <label for="exampleFormControlSelect1">Example select</label> -->
+							<select class="form-control" id="exampleFormControlSelect1">
+								<option>1</option>
+								<option>2</option>
+							</select>
+							<!-- <label for="exampleFormControlSelect2">Example multiple select</label> -->
+							<select class="form-control" id="exampleFormControlSelect2">
+								<option>1</option>
+								<option>2</option>
+							</select>
+						</div>
+						<div class="col-md-9"></div>
+					</div>
+					<h5 class="card-title-custom">Principais benefícios:</h5>
+					<div class="row">
+						<div class="col-md-4">
+
+						</div>
+						<div class="col-md-8"></div>
+					</div>
+					<!-- <div class="flex-row">
+						<a class="card-link">Card link</a>
+						<a class="card-link">Another link</a>
+					</div> -->
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12">
+				<div class="card mb-4 p-4 card-body">
+					<h4 class="card-title-custom">Meus Dados</h4>
 					<p class="card-text">Some quick example text to build on the panel title and make up the bulk of the panel's content.</p>
 					<div class="flex-row">
 						<a class="card-link">Card link</a>
@@ -33,7 +61,7 @@
 			</div>
 			<div class="col-md-4 col-sm-12">
 				<div class="card mb-3 card-body">
-					<h4 class="card-title">Panel title</h4>
+					<h4 class="card-title-custom">Pagamento</h4>
 					<p class="card-text">Some quick example text to build on the panel title and make up the bulk of the panel's content.</p>
 					<div class="flex-row">
 						<a class="card-link">Card link</a>
@@ -43,17 +71,7 @@
 			</div>
 			<div class="col-md-4 col-sm-12">
 				<div class="card mb-3 card-body">
-					<h4 class="card-title">Panel title</h4>
-					<p class="card-text">Some quick example text to build on the panel title and make up the bulk of the panel's content.</p>
-					<div class="flex-row">
-						<a class="card-link">Card link</a>
-						<a class="card-link">Another link</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-12">
-				<div class="card mb-3 card-body">
-					<h4 class="card-title">Panel title</h4>
+					<h4 class="card-title-custom">Pedido</h4>
 					<p class="card-text">Some quick example text to build on the panel title and make up the bulk of the panel's content.</p>
 					<div class="flex-row">
 						<a class="card-link">Card link</a>
@@ -66,14 +84,13 @@
 
 
 	<!-- SCRIPTS -->
-	<!-- JQuery -->
-	<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
-	<!-- Bootstrap tooltips -->
-	<script type="text/javascript" src="assets/js/popper.min.js"></script>
-	<!-- Bootstrap core JavaScript -->
-	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-	<!-- MDB core JavaScript -->
-	<script type="text/javascript" src="assets/js/mdb.min.js"></script>
+	<script src="assets/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+	<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+	 crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+	 crossorigin="anonymous"></script>
+	<script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });</script>
+
 </body>
 
 </html>
